@@ -4,7 +4,7 @@ Step 1.
   1. use [make_1DMOD.m] to construct velocity grid model (ex. MOD_CWB1D)
 
   2. use fortran code [pbr] to calculate ray path for S wave (code is modified from Tsai, 2015)
-     format of input is (pbr  EventLongitude EventLatitude EventDepth StaLongitude StaLatitude StaDepth), StaDepth det on -200 meter 
+     format of input is (pbr  EventLongitude EventLatitude EventDepth StaLongitude StaLatitude StaDepth), StaDepth set on -200 meter 
        depth to prevent out of velocity model
      output is 'out_route_P' and 'out_route_S' for P and S wave (they are almost the same if the velocity structure is consistent
      output format including 6 lines as line 1:n_route (how many route points) ,s_treval_time (in total), 2:source [Lat] [Lon] [Dep], 
