@@ -19,7 +19,7 @@ Step 2.
   1. use matlab function [rpgen.m] to get radiation pattern (code is from reference Grzegorz Kwiatek, 2020)
      Due to the code traditionally is for calculate radiation pattern of tensile rupture on the fault, the gamma should be set as 0 to get radiation pattern for pure shear rupture
 
-  2. the output GS is the RMS of two Horizontal, GSH and GSV are the radiation pattern for individual directions
+  2. the output GS is the theoretical Fs of two Horizontal, GSH and GSV are the radiation pattern for individual directions
      [get_radiation.m] is the code I used to combine SSHAC flatfile and calculated radiation pattern
      take (tmp1_database_TW_ShaCru.mat) as input, it is previous part of FAS flatfile in SSHAC database
      the output result is (database_TW_ShaCru.csv) for example
