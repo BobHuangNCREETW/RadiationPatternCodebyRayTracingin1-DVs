@@ -30,7 +30,7 @@ for kk=1:length(dep_c);
   end
 end
 nlon_c=length(lon_c);nlat_c=length(lat_c);ndep_c=length(dep_c);%ndep_c=length(layered_Vs_1D_CWB);
-fid=fopen('MOD_CWB1D','w');
+fid=fopen('MOD_CWB1D.txt','w');
 fprintf(fid,'%3.1f %g %g %g %g\n',bld3,bld4,nlon_c,nlat_c,ndep_c);
 fprintf(fid,'%g ',lon_c(1:nlon_c));fprintf(fid,'\n');
 fprintf(fid,'%g ',lat_c(1:nlat_c));fprintf(fid,'\n');
