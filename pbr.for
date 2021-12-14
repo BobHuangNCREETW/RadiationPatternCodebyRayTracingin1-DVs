@@ -198,7 +198,7 @@ cc      stop
       use ray
       implicit real*8 (a-h,o-z)
 c      open(1,file="MOD_H13",status='old')
-      open(1,file="MOD_CWB1D",status='old')
+      open(1,file="MOD_CWB1D.txt",status='old')
       read(1,*)bld3,bld4,nlon_c,nlat_c,ndep_c
 ! 20150130_Allocate the matirx size.
       ALLOCATE(lat_c(nlat_c),lon_c(nlon_c),dep_c(ndep_c),vel_p(nlon_c,nl
